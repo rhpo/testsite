@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --padding-main: 20px;
+    --max-height: calc(100vh - var(--padding-main) * 2);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.paragraph {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+.info {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.info > a {
+    font-weight: bolder;
+}
+
+body  {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    height: var(--max-height);
+}
+
+img {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 500px;
+}
+
+.input-box {
+    width: 500px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+}
+
+.box {
+    border-radius: 7px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 5px 0 0px rgba(0, 0, 0, 0.26);
+            box-shadow: 0 5px 0 0px rgba(0, 0, 0, 0.26);
+}
+
+.green-shadow {
+    -webkit-box-shadow: 0 5px 0 0px hsl(154, 58%, 41%);
+            box-shadow: 0 5px 0 0px hsl(154, 58%, 41%);
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+
+    margin-bottom: 20px;
+}
+
+.input-form {
+    background-color: white;
+    padding: 40px;
+
+    width: 500px;
+}
+
+.input-box {
+    border: 0;
+    white-space: nowrap;
+    background-color: white;
+    padding: 10px;
+
+    width: -webkit-fill-available;
+
+    border-radius: 5px;
+
+    border: 1px solid hsl(246, 25%, 77%);
+
+    height: 40px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    cursor: text;
+
+}
+
+.input-box > input {
+    border: 0;
+    width: -webkit-fill-available;
+    height: 25px;
+    background-color: transparent;
+
+    color: hsl(249, 10%, 26%);
+
+    font-weight: bolder;
+
+    padding: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.input-box > input:focus {
+    outline: none;
+}
+
+.input-box :focus-within + .input-box {
+    border: 1px solid red;
+}
+
+.input-holder {
+    margin-bottom: 20px;
+}
+.input-holder:last-child() {
+    margin-bottom: 0;
+}
+
+.icon-err {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin-right: 8px;
+}
+
+.paragraph {
+    line-height: 26px;
+}
+
+.login {
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login:focus {
+    outline: none;
+}
+.login:hover {
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
+}
+
+.login:active {
+    -webkit-transform: scale(0.99);
+        -ms-transform: scale(0.99);
+            transform: scale(0.99);
+}
+
+.container-1 {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: hsl(0, 100%, 74%);
+
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        text-align: center;
+    }
+
+    .text-container > h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 40px;
+
+    }
+
+    .text-container {
+        -webkit-transform: translateY(80px);
+            -ms-transform: translateY(80px);
+                transform: translateY(80px);
+
+    }
+
+    .container-1 {
+        -webkit-transform: scale(.6);
+            -ms-transform: scale(.6);
+                transform: scale(.6)
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 23px;
+    }
+
+    .box-login > .login {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-1 {
+        -webkit-transform: scale(.5);
+            -ms-transform: scale(.5);
+                transform: scale(.5)
+    }
+
+    .text-container {
+        -webkit-transform: translateY(120px);
+            -ms-transform: translateY(120px);
+                transform: translateY(120px);
+
+    }
+
+    .info {
+        font-size: 16px;
+    }
+}
+
+.icon-err {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+}
